@@ -1,5 +1,5 @@
 var i = 0;
-var txt = 'PRAWDZIWE MOŻLIWOŚCI';
+var txt = 'MAŁE WYMIARY - WIELKIE MOŻLIWOŚCI';
 var speed = 50;
 
 function autotekst() {
