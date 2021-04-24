@@ -8,77 +8,22 @@
   <meta name="keywords" content="" />
   <meta name="description" content="" />
   <link href="style.css" rel="stylesheet" type="text/css" />
-
-  <script>
-    function DAWID() {
-      var a1 = prompt("pierwsza zmienna", "");
-      var b1 = prompt("druga zmienna", "");
-      var c1 = prompt("trzecia zmienna", "");
-      var suma1 = (parseFloat(a1) + parseFloat(b1));
-      var trzyzmienne = (parseFloat(suma1) + parseFloat(c1));
-
-
-
-      if (a1 == null || b1 == null || c1 == null || a1 == "" || b1 == "" || c1 == "") {
-        alert("wpisz liczbę");
-      } else if (isNaN(trzyzmienne)) {
-        alert("Wprowadzona wartość nie jest liczbą");
-      } else if (a1 == b1 && a1 == c1 && b1 == c1) {
-        alert("Liczby są równe");
-      } else {
-        alert("suma dwóch liczb = " + suma1);
-        alert("suma wraz z wartością trzeciej zmiennej = " + trzyzmienne);
-        alert("wynik poddany dekrementacji = " + (--trzyzmienne));
-      }
-
-      var odp;
-      var pytajnik = prompt("Jaka ocena?", "");
-      var cooo = parseFloat(pytajnik);
-
-      switch (cooo) {
-        case 1:
-          odp = "Niemożliwe! ";
-          break;
-
-        case 2:
-          odp = "Masakra!";
-          break;
-
-        case 3:
-          odp = "Kiepsko :(";
-          break;
-
-        case 4:
-          odp = "Nie najgorzej, ale i tak lipa (za mało nam płacą)";
-          break;
-
-        case 5:
-          odp = "Może być";
-          break;
-
-        case 6:
-          odp = "Essssssa ";
-          break;
-
-        default:
-          odp = "To nie jest ocena!"
-          break;
-
-      }
-      alert("Nasza reakcja... " + odp);
-
-    }
-  </script>
+  <script src="script.js"></script>
 </head>
 
 <body>
-  <div id="main">
-    <div id="header"></div>
-    <div id="menu">
-      <button onclick="DAWID()">Kliknij mnie hehe &#128513;</button>
-      <br>
-      <b>Update:</b> Sprawdzamy czas uploadu... Nie ma tragedii!
-    </div>
+
+<div class="tytul">
+<img src="logo.png" alt="logo">
+</div>
+
+<ul class="nav">
+  <li><a href="/">Specyfikacja</a></li>
+  <li><a href="/">Poznaj Scroller!</a></li>
+  <li><a href="/">Możliwości</a></li>
+</ul>
+<p class="tekst" id="tekst"></p>
+
 </body>
 
 </html>
