@@ -36,7 +36,7 @@ img {
 .nav a{
     display:inline-block;
     padding:10px;
-    border: 1px solid #2228a6;
+    border: 2px solid #2228a6;
     background-color: #000000;
     color: #FFFFFF;
     padding: 14px 28px;
@@ -52,7 +52,7 @@ img {
     transition: 0.5s;
     display:inline-block;
     padding:10px;
-    border: 1px solid #FFFFFF;
+    border: 2px solid #FFFFFF;
     background-color: #222831;
     color: #FFFFFF;
     padding: 14px 28px;
