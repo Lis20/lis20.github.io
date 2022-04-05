@@ -23,6 +23,15 @@ body {
     text-align: center;
   }
 
+.licz {
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    color: #FFFFFF;
+    text-align: center;
+  }
+
+
+
 img {
   width: 25%;
   height: 25%;

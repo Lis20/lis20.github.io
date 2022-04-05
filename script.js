@@ -2,6 +2,8 @@ var i = 0;
 var txt = 'MAŁE WYMIARY - WIELKIE MOŻLIWOŚCI';
 var speed = 50;
 
+alert("Gorące rezystory w Twojej okolicy - Sprawdź napięcie na regulatorze!")
+
 function autotekst() {
   if (i < txt.length) {
     document.getElementById("tekst").innerHTML += txt.charAt(i);
