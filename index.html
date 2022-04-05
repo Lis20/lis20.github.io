@@ -26,8 +26,34 @@
 <br>
 <br>
 <div class="licz">
-Tu powinien być licznik no ale cóż... W javascirpt nie za bardzo można a GITHUB nie ogarnia za dobrze PHP-a
+Tu powinien być licznik no ale cóż... W javascirpt nie za bardzo można a GITHUB nie ogarnia za dobrze PHP
 </div>
+
+<?php 
+session_start();
+
+$plik = "licznik.txt";
+
+if (!file_exists($plik)) {
+    $f = fopen($plik, "w");
+    fwrite($f,"0");
+    fclose($f);
+}
+
+$f = fopen($plik,"r");
+$licznik = fread($f, filesize($plik));
+fclose($f);
+
+if(!isset($_SESSION['odwiedzil'])){
+  $_SESSION['odwiedzil']="tak";
+  $licznik++;
+  $f = fopen($plik, "w");
+  fwrite($f, $licznik);
+  fclose($f); 
+}
+
+echo "Jestes ".$licznik."odwiedzajacym na tej stronie, elo.";
+?>
 
 </body>
 
